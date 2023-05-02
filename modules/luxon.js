@@ -6,4 +6,4 @@ const displayTime = () => {
   const dt = DateTime.now();
   time.innerHTML = dt.toLocaleString(DateTime.DATETIME_MED);
 };
-export { displayTime };
+export { displayTime, time };

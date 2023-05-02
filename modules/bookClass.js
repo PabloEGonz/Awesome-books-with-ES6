@@ -3,10 +3,6 @@ const authorInput = document.querySelector('#author');
 const formButton = document.querySelector('#submit-button');
 const bookList = document.querySelector('.book-display');
 
-export {
-  titleInput, authorInput, formButton, bookList,
-};
-
 class Book {
   constructor(title, author) {
     this.title = title;
@@ -58,4 +54,4 @@ class Book {
     }
   }
 }
-export { Book };
+export { formButton, bookList, Book };
