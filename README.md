@@ -63,7 +63,7 @@ This is a website where you can save your favorites books.
 
 > You can find the Live demo at:
 
-- Coming soon
+- https://pabloegonz.github.io/Awesome-books-with-ES6/
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
