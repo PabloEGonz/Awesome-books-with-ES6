@@ -2,7 +2,7 @@ import { formButton, bookList, Book } from './modules/bookClass.js';
 
 import { sections, navList } from './modules/navItems.js';
 
-import * as displayTime from './modules/luxon.js';
+import { displayTime } from './modules/luxon.js';
 
 const myBook = new Book();
 

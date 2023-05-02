@@ -14,7 +14,7 @@ class Book {
     this.books = Book.getBooks() || [];
   }
 
-  static getBooks() {
+  static getBooks = () => {
     const bookInfo = localStorage.getItem('books');
     if (bookInfo !== null && bookInfo !== undefined) {
       return JSON.parse(bookInfo);
@@ -22,7 +22,7 @@ class Book {
     return [];
   }
 
-  addBookToList() {
+  addBookToList = () => {
     bookList.innerHTML = '';
     if (Array.isArray(this.books)) {
       this.books.forEach((book, i) => {
@@ -34,13 +34,13 @@ class Book {
     }
   }
 
-  removeBookFromList(i) {
+  removeBookFromList = (i) => {
     this.books.splice(i, 1);
     localStorage.setItem('books', JSON.stringify(this.books));
     this.addBookToList();
   }
 
-  handleFormSubmit() {
+  handleFormSubmit = () => {
     const title = titleInput.value;
     const author = authorInput.value;
     const book = new Book(title, author);
@@ -49,7 +49,7 @@ class Book {
     this.addBookToList();
   }
 
-  handleRemoveButtonClick(e) {
+  handleRemoveButtonClick = (e) => {
     if (e.target.matches('.remove')) {
       const {
         index,
